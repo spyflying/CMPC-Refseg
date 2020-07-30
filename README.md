@@ -43,6 +43,7 @@ python build_batches.py -d referit -t test
 ```
 
 * Glove Embedding Obtain
+
 Download `Gref_emb.npy` and `referit_emb.npy` and put them at `data/`. We provide Download Link for Glove Embedding here:
 [https://pan.baidu.com/s/19f8CxT3lc_UyjCIIE_74FA](https://pan.baidu.com/s/19f8CxT3lc_UyjCIIE_74FA), pswd: 2m28.
 
