@@ -62,4 +62,6 @@ python -u trainval_model.py -m test -d unc -t val -n CMPC_model -i 700000 -c -em
 ```
 You can also download our checkpoint to test on four benchmarks. We provide checkpoints here:
 [https://pan.baidu.com/s/17TJDEiq5xA5ngN2jhsDQYA](https://pan.baidu.com/s/17TJDEiq5xA5ngN2jhsDQYA), pswd: 2miu.
+
+
 We made a little modify over CMPC_model.py so that the new CMPC_model could achieve higher OverAll IoUs on the four benchmarks.
