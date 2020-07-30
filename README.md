@@ -26,6 +26,7 @@ This code is derived from [https://github.com/liruiyu/referseg_rrn](https://gith
 
 ## Data preparation
 * Dataset preprocess
+
 We conduct experiments on 4 benchmarks of referring image segmentation, including `UNC`, `UNC+`, `Gref` and `ReferIt`. After these datasets are downloaded, run following commands for data preparation:
 ```
 python build_batches.py -d Gref -t train
