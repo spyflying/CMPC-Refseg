@@ -1,7 +1,9 @@
 # Referring Image Segmentation via Cross-Modal Progressive Comprehension
-Code of our CVPR 2020 paper *Referring Image Segmentation via Cross-Modal Progressive Comprehension*.
+Code of our CVPR 2020 paper [*Referring Image Segmentation via Cross-Modal Progressive Comprehension*](https://openaccess.thecvf.com/content_CVPR_2020/papers/Huang_Referring_Image_Segmentation_via_Cross-Modal_Progressive_Comprehension_CVPR_2020_paper.pdf).
 
-## Interpretation of our progressive referring segmentation method.
+Shaofei Huang*, Tianrui Hui*, Si Liu, Guanbin Li, Yunchao Wei, Jizhong Han, Luoqi Liu, Bo Li (* Equal Contribution)
+
+## Interpretation of CMPC.
 
 * (a) Input referring expression and image. 
 
@@ -11,6 +13,19 @@ Code of our CVPR 2020 paper *Referring Image Segmentation via Cross-Modal Progre
 
 * (d) Benefiting from the relation-aware reasoning process, the referred entity is found as the final prediction (purple mask).
 ![interpretation](motivation.png)
+
+## Experimental Results
+
+We modify the way of feature concatenation in the end of CMPC module and achieve higher performances than the results reported in our paper.
+New experimental results are summarized in the table above.
+You can download our trained checkpoints to test on the four datasets. The link to the checkpoints is:
+[Baidu Drive](https://pan.baidu.com/s/17TJDEiq5xA5ngN2jhsDQYA), pswd: 2miu.
+
+| Method | UNC val | UNC testA | UNC testB | UNC+ val | UNC+ testA | UNC+ testB | G-Ref val | ReferIt test |
+| :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
+| STEP-ICCV19 [2] | 60.04 | 63.46 | 57.97 | 48.19 | 52.33 | 40.41| 64.13 | 46.40 |
+| Ours-CVPR20 | 61.36 | 64.53 | 59.64 | 49.56 | 53.44 | 43.23 | 65.53 | 49.05 |
+|Ours-Updated | **62.47** | **65.08** | **60.82** | **50.25** | **54.04** | **43.47** | **65.58** | **49.89** |
 
 ## Setup
 
@@ -22,10 +37,10 @@ We recommended the following dependencies.
 * Spacy
 * pydensecrf
 
-This code is derived from [referseg_rrn](https://github.com/liruiyu/referseg_rrn). Please refer to it for more details of setup.
+This code is derived from [RRN [1]](https://github.com/liruiyu/referseg_rrn). Please refer to it for more details of setup.
 
-## Data preparation
-* Dataset preprocessing
+## Data Preparation
+* Dataset Preprocessing
 
 We conduct experiments on 4 datasets of referring image segmentation, including `UNC`, `UNC+`, `Gref` and `ReferIt`. After downloading these datasets, you can run the following commands for data preparation:
 ```
@@ -61,20 +76,9 @@ Test on UNC validation set with:
 python -u trainval_model.py -m test -d unc -t val -n CMPC_model -i 700000 -c -emb -f ckpts/unc/cmpc_model
 ```
 
-We modify the way of feature concatenation in the end of CMPC module and achieve higher performances than the results reported in our paper.
-New experimental results are summarized in the table bellow.
-You can download our trained checkpoints to test on the four datasets. The link to the checkpoints is:
-[Baidu Drive](https://pan.baidu.com/s/17TJDEiq5xA5ngN2jhsDQYA), pswd: 2miu.
-
-| Method | UNC val | UNC testA | UNC testB | UNC+ val | UNC+ testA | UNC+ testB | G-Ref val | ReferIt test |
-| :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
-| STEP-ICCV19 | 60.04 | 63.46 | 57.97 | 48.19 | 52.33 | 40.41| 64.13 | 46.40 |
-| Ours-CVPR20 | 61.36 | 64.53 | 59.64 | 49.56 | 53.44 | 43.23 | 65.53 | 49.05 |
-|Ours-Updated | **62.47** | **65.08** | **60.82** | **50.25** | **54.04** | **43.47** | **65.58** | **49.89** |
-
 ## Reference
-1. Li, Ruiyu, et al. "Referring image segmentation via recurrent refinement networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
-2. Chen, Ding-Jie, et al. "See-through-text grouping for referring image segmentation." Proceedings of the IEEE International Conference on Computer Vision. 2019.
+\[1\] Li, Ruiyu, et al. "Referring image segmentation via recurrent refinement networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
+\[2\] Chen, Ding-Jie, et al. "See-through-text grouping for referring image segmentation." Proceedings of the IEEE International Conference on Computer Vision. 2019.
 
 ## Citation
 If our CMPC is useful to your research, please consider citing:
