@@ -23,7 +23,7 @@ You can download our trained checkpoints to test on the four datasets. The link 
 
 | Method | UNC val | UNC testA | UNC testB | UNC+ val | UNC+ testA | UNC+ testB | G-Ref val | ReferIt test |
 | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
-| STEP-ICCV19 \[2\] | 60.04 | 63.46 | 57.97 | 48.19 | 52.33 | 40.41| 64.13 | 46.40 |
+| STEP-ICCV19 \[1\] | 60.04 | 63.46 | 57.97 | 48.19 | 52.33 | 40.41| 64.13 | 46.40 |
 | Ours-CVPR20 | 61.36 | 64.53 | 59.64 | 49.56 | 53.44 | 43.23 | 65.53 | 49.05 |
 |Ours-Updated | **62.47** | **65.08** | **60.82** | **50.25** | **54.04** | **43.47** | **65.58** | **49.89** |
 
@@ -37,7 +37,7 @@ We recommended the following dependencies.
 * Spacy
 * pydensecrf
 
-This code is derived from [RRN](https://github.com/liruiyu/referseg_rrn) \[1\]. Please refer to it for more details of setup.
+This code is derived from [RRN](https://github.com/liruiyu/referseg_rrn) \[2\]. Please refer to it for more details of setup.
 
 ## Data Preparation
 * Dataset Preprocessing
@@ -77,9 +77,9 @@ python -u trainval_model.py -m test -d unc -t val -n CMPC_model -i 700000 -c -em
 ```
 
 ## Reference
-\[1\] Li, Ruiyu, et al. "Referring image segmentation via recurrent refinement networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
+\[1\] Chen, Ding-Jie, et al. "See-through-text grouping for referring image segmentation." Proceedings of the IEEE International Conference on Computer Vision. 2019.
 
-\[2\] Chen, Ding-Jie, et al. "See-through-text grouping for referring image segmentation." Proceedings of the IEEE International Conference on Computer Vision. 2019.
+\[2\] Li, Ruiyu, et al. "Referring image segmentation via recurrent refinement networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
 
 ## Citation
 If our CMPC is useful to your research, please consider citing:
