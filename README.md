@@ -5,11 +5,11 @@ Shaofei Huang*, Tianrui Hui*, Si Liu, Guanbin Li, Yunchao Wei, Jizhong Han, Luoq
 
 ## Interpretation of CMPC.
 
-* (a) Input referring expression and image. 
+* (a) Input referring expression and image.
 
-* (b) The model first perceives all the entities described in the expression based on entity words and attribute words, e.g., “man” and “white frisbee”(orange masks and blue outline). 
+* (b) The model first perceives all the entities described in the expression based on entity words and attribute words, e.g., “man” and “white frisbee” (orange masks and blue outline).
 
-* (c) After finding out all the candi-date entities that may match with input expression, relational word 087 “holding” can be further exploited to highlight the entity involved with the relationship (green arrow) and suppress the others which are not involved. 
+* (c) After finding out all the candidate entities that may match with input expression, relational word “holding” can be further exploited to highlight the entity involved with the relationship (green arrow) and suppress the others which are not involved.
 
 * (d) Benefiting from the relation-aware reasoning process, the referred entity is found as the final prediction (purple mask).
 ![interpretation](motivation.png)
@@ -17,13 +17,13 @@ Shaofei Huang*, Tianrui Hui*, Si Liu, Guanbin Li, Yunchao Wei, Jizhong Han, Luoq
 ## Experimental Results
 
 We modify the way of feature concatenation in the end of CMPC module and achieve higher performances than the results reported in our paper.
-New experimental results are summarized in the table above.
+New experimental results are summarized in the table bellow.
 You can download our trained checkpoints to test on the four datasets. The link to the checkpoints is:
 [Baidu Drive](https://pan.baidu.com/s/17TJDEiq5xA5ngN2jhsDQYA), pswd: 2miu.
 
 | Method | UNC val | UNC testA | UNC testB | UNC+ val | UNC+ testA | UNC+ testB | G-Ref val | ReferIt test |
 | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
-| STEP-ICCV19 [2] | 60.04 | 63.46 | 57.97 | 48.19 | 52.33 | 40.41| 64.13 | 46.40 |
+| STEP-ICCV19 \[2\] | 60.04 | 63.46 | 57.97 | 48.19 | 52.33 | 40.41| 64.13 | 46.40 |
 | Ours-CVPR20 | 61.36 | 64.53 | 59.64 | 49.56 | 53.44 | 43.23 | 65.53 | 49.05 |
 |Ours-Updated | **62.47** | **65.08** | **60.82** | **50.25** | **54.04** | **43.47** | **65.58** | **49.89** |
 
@@ -37,7 +37,7 @@ We recommended the following dependencies.
 * Spacy
 * pydensecrf
 
-This code is derived from [RRN [1]](https://github.com/liruiyu/referseg_rrn). Please refer to it for more details of setup.
+This code is derived from [RRN](https://github.com/liruiyu/referseg_rrn) \[1\]. Please refer to it for more details of setup.
 
 ## Data Preparation
 * Dataset Preprocessing
@@ -78,6 +78,7 @@ python -u trainval_model.py -m test -d unc -t val -n CMPC_model -i 700000 -c -em
 
 ## Reference
 \[1\] Li, Ruiyu, et al. "Referring image segmentation via recurrent refinement networks." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
+
 \[2\] Chen, Ding-Jie, et al. "See-through-text grouping for referring image segmentation." Proceedings of the IEEE International Conference on Computer Vision. 2019.
 
 ## Citation
