@@ -34,7 +34,6 @@ We recommended the following dependencies.
 * Python 2.7
 * TensorFlow 1.5
 * Numpy
-* Spacy
 * pydensecrf
 
 This code is derived from [RRN](https://github.com/liruiyu/referseg_rrn) \[2\]. Please refer to it for more details of setup.
