@@ -1,7 +1,7 @@
 # Referring Image Segmentation via Cross-Modal Progressive Comprehension
 Code of our CVPR 2020 paper [*Referring Image Segmentation via Cross-Modal Progressive Comprehension*](https://openaccess.thecvf.com/content_CVPR_2020/papers/Huang_Referring_Image_Segmentation_via_Cross-Modal_Progressive_Comprehension_CVPR_2020_paper.pdf).
 
-Shaofei Huang*, Tianrui Hui*, Si Liu, Guanbin Li, Yunchao Wei, Jizhong Han, Luoqi Liu, Bo Li (* Equal Contribution)
+Shaofei Huang*, Tianrui Hui*, Si Liu, Guanbin Li, Yunchao Wei, Jizhong Han, Luoqi Liu, Bo Li (* Equal contribution)
 
 ## Interpretation of CMPC.
 
