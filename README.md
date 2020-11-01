@@ -75,6 +75,9 @@ Test on UNC validation set with:
 python -u trainval_model.py -m test -d unc -t val -n CMPC_model -i 700000 -c -emb -f ckpts/unc/cmpc_model
 ```
 
+## CMPC for video referring segmentation
+We release video version code for CMPC on A2D dataset under `CMPC_video/`.
+
 ## Reference
 \[1\] Chen, Ding-Jie, et al. "See-through-text grouping for referring image segmentation." Proceedings of the IEEE International Conference on Computer Vision. 2019.
 
