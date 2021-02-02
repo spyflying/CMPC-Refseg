@@ -19,7 +19,7 @@ Shaofei Huang*, Tianrui Hui*, Si Liu, Guanbin Li, Yunchao Wei, Jizhong Han, Luoq
 We modify the way of feature concatenation in the end of CMPC module and achieve higher performances than the results reported in our paper.
 New experimental results are summarized in the table bellow.
 You can download our trained checkpoints to test on the four datasets. The link to the checkpoints is:
-[Baidu Drive](https://pan.baidu.com/s/17TJDEiq5xA5ngN2jhsDQYA), pswd: 2miu.
+[Baidu Drive](https://pan.baidu.com/s/1Vm7JqqCJ6Gl3Rp4P2M-obA), pswd: jjsf.
 
 | Method | UNC val | UNC testA | UNC testB | UNC+ val | UNC+ testA | UNC+ testB | G-Ref val | ReferIt test |
 | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: | :------: |
